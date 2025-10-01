@@ -50,11 +50,10 @@ nav .accessibility input{
 }
 
 main{
-     position: relative;
+     position: absolute;
      top: 7em;
      left: 2em;
      width: 90%;
-     height: 80vh;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
