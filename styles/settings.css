@@ -225,3 +225,87 @@ main{
      border-radius: 10px;
      padding: .3em .5em .3em .5em;
 }
+
+.popup{
+     display: flex;
+     flex-direction: column;
+     background-color: white;
+     border: 1.5px solid rgb(218, 215, 215);
+     border-radius: 20px;
+     width: 40%;
+     padding: .4em .5em .3em .5em;
+     /* position: fixed;
+     left: 30%; right: 30%; top: 30%; bottom: 30% ; */
+}
+.popup .title-container{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid rgb(202, 202, 202);
+     
+}
+.popup .title-container button{
+     border: none;
+     font-size: 1.2rem;
+     cursor: pointer;
+     background-color: transparent;
+     transition: all .3s ease;
+}
+.popup .title-container button:hover{
+     transform: scale(1.1);
+}
+.popup .title-container button:active{
+     transform: scale(1);
+}
+.popup .search-container{
+     width: 100%;
+     padding: .5em .8em 3em .8em;
+}
+.popup .search-container .added-location{
+     border: 2px solid rgb(214, 214, 214);
+     border-radius: 10px;
+     width: 80%;
+     height: 3.5em;
+     margin-left: 1em;
+}
+
+.popup .preferences{
+     width: 100%;
+     padding: .5em .8em 1em .8em;
+}
+.popup .preferences .suggestion{
+     width: 75%;
+     border: 2px solid rgb(201, 201, 201);
+     border-radius: 20px;
+     margin-left: 1em;
+     margin-bottom: .5em;
+     padding: .3em .8em;
+}
+.popup .preferences .suggestion:focus{
+     border: 2px solid blue;
+}
+
+.popup .preferences .suggest-one p{
+     margin: .3em; padding: 0;
+}
+.popup .add-or-cancel{
+     margin-left: 50%;
+}
+.popup .add-or-cancel .refuse{
+     border: none;
+     padding: .5em .8em;
+     margin-right: 1em;
+     font-size: 1.1rem;
+     border-radius: 10px;
+}
+.popup .add-or-cancel .accept{
+     border: none;
+     padding: .5em .8em;
+     margin-right: 1em;
+     font-size: 1.1rem;
+     background-color:blue;
+     color: white;
+     border-radius: 10px;
+}
