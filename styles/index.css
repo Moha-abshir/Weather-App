@@ -1,0 +1,76 @@
+html, body{
+     box-sizing: border-box;
+     margin: 0; padding: 0;
+     position: relative;
+     height: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
+     width: 50%;
+     height: auto;
+     border: 2px solid rgb(221, 219, 219);
+     border-radius: 20px;
+     box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #fff;
+     position: absolute;
+     top:18%;
+     left: 25%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     text-align: justify;
+     gap: 1em;
+     padding: 1em;
+}
+.main-container .topic{
+     width: 80%;
+     text-align: center;
+}
+.main-container .topic h1{
+     font-size: clamp(1.75rem, 3vw, 3rem);
+     margin: 0; padding: 0;
+}
+.main-container .useful-message{
+     width: 80%;
+     text-align: center;
+}
+.main-container .useful-message p{
+     font-size: clamp(.7rem, 0.4vw + 0.8rem, 1.25rem);
+     line-height: 1.6;
+     color: rgb(92, 91, 91);
+}
+.main-container .get-location{
+     width: 80%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.main-container .get-location h3{
+     font-size: clamp(.75rem, 1.7vw, 3rem);
+}
+.main-container .get-location .inputDiv{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+.main-container .get-location #location{
+     border: 2px solid rgb(182, 179, 179);
+     border-radius: 20px;
+     font-size: clamp(0.9rem, 0.5vw + 0.8rem, 1.1rem);
+     padding: clamp(0.5rem, 0.6vw, 1rem) clamp(0.75rem, 1vw, 1.5rem);
+     width: clamp(200px, 50%, 500px);
+     border-radius: clamp(6px, 1vw, 12px);
+     
+}
+.main-container .get-location a{
+     display: block;
+}
+.main-container .get-location button{
+     font-size: clamp(0.9rem, 0.4vw , 1.1rem);
+     padding: clamp(0.5rem, 0.8vw, 1rem) clamp(1rem, 2vw, 2rem);
+     border-radius: clamp(6px, 1vw, 12px);
+     cursor: pointer;
+     border: none;
+     background-color: rgb(94, 91, 91);
+     color: white;
+}

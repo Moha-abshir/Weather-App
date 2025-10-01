@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dashboard</title>
+     <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+     <header>
+          <nav>
+               <div class="name">
+                    <img src="images/world.png" alt="Weather new">
+                    <h3>{WeatherWise}</h3>
+               </div>
+               <div class="accessibility">
+                    <input type="text" id="location_city" placeholder="Enter a Location">
+                    <img src="images/setting.png" alt="setting">
+                    <img src="images/user.png" alt="Profile">
+               </div>
+          </nav>
+     </header>
+     <main>
+          <section class="weather-data">
+               <div class="topic-weather">
+                    <div>
+                         <p class="location"></p>
+                         <p style="color: gray;">Current Condition: <span class="description"></span></p>
+                         <p class="temp-now"></p>
+                    </div>
+                    <div>
+                         <img src="" id="image" alt="Weather Icon">
+                    </div>
+               </div>
+               <div class="additional-info">
+                    <div class="alert">
+                         <h3>&#9888;&#65039;Weather Advisories/Alerts</h3>
+                         <p id="alerts"></p>
+                    </div>
+                    <div class="info-of-day">
+                         <h3>Daily Outlook</h3>
+                         <div class="info">
+                              <div class="inf">
+                                   <div>
+                                        <img src="images/low-temperature.png" alt="Temperature">
+                                   </div>
+                                   <div>
+                                        <p class="p">High/Low</p>
+                                        <p style="font-weight: bold;" id="highLow"></p>
+                                   </div>
+                              </div>
+                              <div class="inf">
+                                   <div>
+                                        <img src="images/humidity.png" alt="Precipitation">
+                                   </div>
+                                   <div>
+                                        <p class="p">Precipitation</p>
+                                        <p style="font-weight: bold;" id="precipitation">15%</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="detailed-data">
+               <h2>Key Weather Metrics</h2>
+               <div class="main-container">
+                    <div class="sub-container">
+                         <div class="mini">
+                              <div>
+                                   <img src="weather-icons/celsius.png" alt="Temperature">
+                              </div>
+                              <div>
+                                   <p style="color: gray;">Feels Like</p>
+                                   <p id="feelTemp"></p>
+                              </div>
+                         </div>
+                         <div class="mini">
+                              <div>
+                                   <img src="weather-icons/humidity (1).png" alt="Temperature">
+                              </div>
+                              <div>
+                                   <p style="color: gray;">Humidity</p>
+                                   <p id="avgHumidity"></p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="sub-container">
+                         <div class="mini">
+                              <div>
+                                   <img src="weather-icons/wind.png" alt="Temperature">
+                              </div>
+                              <div>
+                                   <p style="color: gray;">Wind</p>
+                                   <p id="wind"></p>
+                              </div>
+                         </div>
+                         <div class="mini">
+                              <div>
+                                   <img src="weather-icons/blood-pressure.png" alt="Temperature">
+                              </div>
+                              <div>
+                                   <p style="color: gray;">Pressure</p>
+                                   <p id="pressure"></p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="sub-container">
+                         <div class="mini">
+                              <div>
+                                   <img src="weather-icons/sea-level.png" alt="Temperature">
+                              </div>
+                              <div>
+                                   <p style="color: gray;">Heat Index</p>
+                                   <p id="heatIndex"></p>
+                              </div>
+                         </div>
+                         <div class="mini">
+                              <div>
+                                   <img src="weather-icons/visibility.png" alt="Temperature">
+                              </div>
+                              <div>
+                                   <p style="color: gray;">Visibility</p>
+                                   <p id="visibility">10km</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="sub-container">
+                         <div class="mini">
+                              <div>
+                                   <img src="weather-icons/sunrise.png" alt="Temperature">
+                              </div>
+                              <div>
+                                   <p style="color: gray;">Sunrise</p>
+                                   <p id="sunrise"></p>
+                              </div>
+                         </div>
+                         <div class="mini">
+                              <div>
+                                   <img src="weather-icons/sunset.png" alt="Temperature">
+                              </div>
+                              <div>
+                                   <p style="color: gray;">Sunset</p>
+                                   <p id="sunset"></p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+     <script src="script.js"></script>
+</body>
+</html>
