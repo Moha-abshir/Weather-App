@@ -47,7 +47,7 @@ nav .accessibility input{
      padding: clamp(0.5rem, 0.6vw, 1rem) clamp(0.75rem, 1vw, 1.5rem);
      width: clamp(200px, 50%, 500px);
      border-radius: clamp(6px, 1vw, 12px);
-}
+} 
 
 main{
      position: absolute;
